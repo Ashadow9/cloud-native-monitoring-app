@@ -1,6 +1,6 @@
 # **Cloud Native Resource Monitoring Python App on K8s!**
 
-# **Cloud Native applications is nothing but building the modern applications that can run in the cloud. These applications are deployed as containers consisting multiple microservices that can be scaled deployed and managed independently, making it more flexible. To achieve this cloud native applications are deployed with an orchestrator such as Kubernetes which can make deployment and management of conatiners very easily.**
+ **Cloud Native applications is nothing but building the modern applications that can run in the cloud. These applications are deployed as containers consisting multiple microservices that can be scaled deployed and managed independently, making it more flexible. To achieve this cloud native applications are deployed with an orchestrator such as Kubernetes which can make deployment and management of conatiners very easily.**
 
 ## **Prerequisites** !
 
