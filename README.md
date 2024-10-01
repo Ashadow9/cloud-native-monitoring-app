@@ -275,5 +275,5 @@ Once your pod is up and running, run the port-forward to expose the service
 ```bash
 kubectl port-forward service/<service_name> 5000:5000
 ```
-![image](https://github.com/user-attachments/assets/735e2f29-deee-41ad-a738-284448b93ad8)
+![image](https://github.com/user-attachments/assets/afca86ca-290c-4818-be9b-40990d45393b)
 
