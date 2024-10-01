@@ -1,22 +1,6 @@
 # **Cloud Native Resource Monitoring Python App on K8s!**
 
-## Things you will Learn 🤯
-
-1. Python and How to create Monitoring Application in Python using Flask and psutil
-2. How to run a Python App locally.
-3. Learn Docker and How to containerize a Python application
-    1. Creating Dockerfile
-    2. Building DockerImage
-    3. Running Docker Container
-    4. Docker Commands
-4. Create ECR repository using Python Boto3 and pushing Docker Image to ECR
-5. Learn Kubernetes and Create EKS cluster and Nodegroups
-6. Create Kubernetes Deployments and Services using Python!
-
-# **Youtube Video for step by step Demonstration!**
-
-[![Video Tutorial](https://img.youtube.com/vi/kBWCsHEcWnc/0.jpg)](https://youtu.be/kBWCsHEcWnc)
-
+# **Cloud Native applications is nothing but building the modern applications that can run in the cloud. These applications are deployed as containers consisting multiple microservices that can be scaled deployed and managed independently, making it more flexible. To achieve this cloud native applications are deployed with an orchestrator such as Kubernetes which can make deployment and management of conatiners very easily.**
 
 ## **Prerequisites** !
 
@@ -39,7 +23,27 @@ Clone the code from the repository:
 ```
 git clone <repository_url>
 ```
+### **Step 2: Install Docker,Python,AWS CLI,Kubectl**
 
+
+![image](https://github.com/user-attachments/assets/a4a5f81a-69d5-4b12-9da6-0d394f6731a7)
+
+Install Kubectl:
+
+'''yaml
+curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.24.11/2023-03-17/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+sudo cp ./kubectl /usr/local/bin
+export PATH=/usr/local/bin:$PATH
+'''
+
+Install AWScli:
+
+'''yaml
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+'''
 ### **Step 2: Install dependencies**
 
 The application uses the **`psutil`** and **`Flask`, Plotly, boto3** libraries. Install them using pip:
