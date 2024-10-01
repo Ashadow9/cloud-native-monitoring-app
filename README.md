@@ -26,10 +26,7 @@ git clone <repository_url>
 ### **Step 2: Install Docker,Python,AWS CLI,Kubectl**
 
 
-![image](https://github.com/user-attachments/assets/a4a5f81a-69d5-4b12-9da6-0d394f6731a7)
-
 Install Kubectl:
-
 
 curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.24.11/2023-03-17/bin/linux/amd64/kubectl
 chmod +x ./kubectl
@@ -39,15 +36,12 @@ export PATH=/usr/local/bin:$PATH
 
 Install AWScli:
 
-'''yaml
-
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-
 unzip awscliv2.zip
-
 sudo ./aws/install
 
-'''
+![image](https://github.com/user-attachments/assets/a4a5f81a-69d5-4b12-9da6-0d394f6731a7)
+
 
 ### **Step 2: Install dependencies**
 
@@ -66,6 +60,9 @@ python3 app.py
 ```
 
 This will start the Flask server on **`localhost:5000`**. Navigate to [http://localhost:5000/](http://localhost:5000/) on your browser to access the application.
+
+![image](https://github.com/user-attachments/assets/9e152330-7776-4d13-83d1-ba6333f719df)
+
 
 ## **Part 2: Dockerizing the Flask application**
 
