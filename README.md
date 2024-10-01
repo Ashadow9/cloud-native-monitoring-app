@@ -102,6 +102,9 @@ To build the Docker image, execute the following command:
 ```
 docker build -t <image_name> .
 ```
+![image](https://github.com/user-attachments/assets/3fd52b7a-05b6-477c-bd26-6d6e2600e1b4)
+
+
 
 ### **Step 3: Run the Docker container**
 
@@ -110,6 +113,8 @@ To run the Docker container, execute the following command:
 ```
 docker run -p 5000:5000 <image_name>
 ```
+![image](https://github.com/user-attachments/assets/36cf3c53-54d2-4a60-ab94-a4c45b821279)
+
 
 This will start the Flask server in a Docker container on **`localhost:5000`**. Navigate to [http://localhost:5000/](http://localhost:5000/) on your browser to access the application.
 
@@ -133,14 +138,23 @@ response = ecr_client.create_repository(repositoryName=repository_name)
 repository_uri = response['repository']['repositoryUri']
 print(repository_uri)
 ```
+![image](https://github.com/user-attachments/assets/e0795ea1-6b28-437c-9159-8275b74c7ce1)
+
+![image](https://github.com/user-attachments/assets/d311be9d-97ab-415d-9c6b-d25ba627d4d8)
 
 ### **Step 2: Push the Docker image to ECR**
 
 Push the Docker image to ECR using the push commands on the console:
 
+![image](https://github.com/user-attachments/assets/d6f3c34d-7ad0-4d56-a3c3-7792ecbc95de)
+
+
 ```
 docker push <ecr_repo_uri>:<tag>
 ```
+
+![image](https://github.com/user-attachments/assets/cd6e0093-4e12-410a-95f8-971017de5fe4)
+
 
 ## **Part 4: Creating an EKS cluster and deploying the app using Python**
 
@@ -148,9 +162,21 @@ docker push <ecr_repo_uri>:<tag>
 
 Create an EKS cluster and add node group
 
+
+![image](https://github.com/user-attachments/assets/095fd4ba-4f38-4327-aa3f-a2eb307b8dad)
+
+![image](https://github.com/user-attachments/assets/cce39276-5a1b-41b9-b62a-34a3307cb1f6)
+
+
 ### **Step 2: Create a node group**
 
 Create a node group in the EKS cluster.
+
+![image](https://github.com/user-attachments/assets/01b2c08c-cf9c-4999-88fd-0e87bfd5d951)
+
+
+
+
 
 ### **Step 3: Create deployment and service**
 
