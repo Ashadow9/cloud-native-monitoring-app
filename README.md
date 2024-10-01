@@ -155,8 +155,29 @@ docker push <ecr_repo_uri>:<tag>
 
 ![image](https://github.com/user-attachments/assets/cd6e0093-4e12-410a-95f8-971017de5fe4)
 
+## **Part 4: Creating Roles for Cluster and nodes**
 
-## **Part 4: Creating an EKS cluster and deploying the app using Python**
+We will create two roles one for AWS EKS or Elastic Kubernetes Services and one for the node group in that cluster.
+
+create a role named as **EKS-Cluster-Role** and in this role attach AmazonEKSClusterPolicy
+![image](https://github.com/user-attachments/assets/049e84cf-8c44-4b31-87d3-aee1448c1584)
+
+Create a role for the cluster role group, name it as nodesroles and attach these policies in this role-
+
+AmazonEC2ContainerRegistryReadOnly
+
+AmazonEKS_CNI_Policy
+
+AmazonEKSServicePolicy
+
+AmazonEKSWorkerNodePolicy
+
+AmazonEKSVPCResourceController
+
+![image](https://github.com/user-attachments/assets/6d5c1752-95e6-4ade-989d-c4a127d00131)
+
+
+## **Part 5: Creating an EKS cluster and deploying the app using Python**
 
 ### **Step 1: Create an EKS cluster**
 
@@ -254,3 +275,5 @@ Once your pod is up and running, run the port-forward to expose the service
 ```bash
 kubectl port-forward service/<service_name> 5000:5000
 ```
+![image](https://github.com/user-attachments/assets/735e2f29-deee-41ad-a738-284448b93ad8)
+
